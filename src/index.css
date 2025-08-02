@@ -1,0 +1,40 @@
+/* Primary color */
+:root {
+  --PRIMARY-COLOR: #1976d2;
+  --PRIMARY-TEXT-COLOR: #000000;
+  --SECONDARY-TEXT-COLOR: #8D9093;
+  --TERTIARY-TEXT-COLOR: #FFFFFF;
+  --TEXTFIELD-LABEL: #58585B;
+}
+
+/* Scroll bar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--SECONDARY-TEXT-COLOR);
+  border-radius: 10px;
+}
+
+/* Font family */
+@font-face {
+  font-family: poppinsRegular;
+  src: url(/src/assets/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: poppinsMedium;
+  src: url(/src/assets/fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: poppinsBold;
+  src: url(/src/assets/fonts/Poppins-Bold.ttf);
+}
+
+.app-bar {
+  font-family: poppinsRegular !important;
+  color: var(--PRIMARY-TEXT-COLOR) !important;
+}
